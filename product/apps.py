@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CatagoryConfig(AppConfig):
+class HelpcenterConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'category'
+    name = 'product'

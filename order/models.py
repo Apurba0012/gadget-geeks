@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 from home.models import Customer
-from product.models import Products, Cart
+from item.models import Products, Cart
 
 
 class Order(models.Model):

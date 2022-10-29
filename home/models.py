@@ -7,8 +7,7 @@ from django.db import models
 
 class Customer(models.Model):
     c_id = models.IntegerField(primary_key=True)
-    c_name = models.ForeignKey(User,related_name='c_name', default='1', on_delete=models.CASCADE)
-    c_password = models.ForeignKey(User, related_name='c_password', default='1', on_delete=models.CASCADE)
+    c_user = models.ForeignKey(User, default='1', on_delete=models.CASCADE)
     c_address = models.TextField(max_length=80)
     c_phoneNum = models.CharField(max_length=20)
 
@@ -19,4 +18,3 @@ class Category(models.Model):
 class Sub_Category(models.Model):
     sc_id = models.IntegerField(primary_key=True)
     sc_name = models.CharField(max_length=20)
-
